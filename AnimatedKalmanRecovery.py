@@ -82,8 +82,8 @@ class AnimatedKalmanRecovery(object):
 
         self.symbol_line, = self.ax.plot(self.t, np.zeros(10), '-', label='Symbol')
         self.conv_line, = self.ax.plot(self.t, np.zeros(10), '-', label='Convolved')
-        self.clock_line, = self.ax.plot(self.t, np.zeros(10), '-', label='Convolved')
-        self.sample_line, = self.ax.plot(self.t, np.zeros(10), 'o', label='Convolved')
+        self.clock_line, = self.ax.plot(self.t, np.zeros(10), '-', label='Clock')
+        self.sample_line, = self.ax.plot(self.t, np.zeros(10), 'o', label='Sample')
         
         plt.locator_params(axis='y', nbins=9)
         plt.locator_params(axis='x', nbins=10)
